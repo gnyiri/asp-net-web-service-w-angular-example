@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace ASPNetWebServiceExample.Models
 {
+    // represents a DB session
     public class NoteContext : DbContext
     {
         public NoteContext(DbContextOptions<NoteContext> options)
             : base(options)
         {
         }
-
         public DbSet<NoteItem> NoteItems { get; set; }
     }
 }
