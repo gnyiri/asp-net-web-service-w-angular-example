@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNetWebServiceExample", "ASPNetWebServiceExample.csproj", "{E5A9DAA0-D6DB-4236-85A9-79AD878DDC24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5A9DAA0-D6DB-4236-85A9-79AD878DDC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5A9DAA0-D6DB-4236-85A9-79AD878DDC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5A9DAA0-D6DB-4236-85A9-79AD878DDC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5A9DAA0-D6DB-4236-85A9-79AD878DDC24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {651729FC-D68B-4E85-A9BF-D66CE47489CD}
+	EndGlobalSection
+EndGlobal
