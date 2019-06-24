@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Note Title</label>
+        <input type="text" class="form-control" 
+          formControlName="NoteTitle" 
+          #NoteTitle />
+      </div>
+      <div *ngIf="angForm.controls['NoteTitle'].invalid && (angForm.controls['NoteTitle'].dirty || angForm.controls['NoteTitle'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['NoteTitle'].errors.required">
+          Note Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Note Date</label>
+        <textarea class="form-control" rows = 7 cols = "5"
+        formControlName="NoteDate" 
+        #NoteDate></textarea>
+      </div>
+      <div *ngIf="angForm.controls['NoteDate'].invalid && (angForm.controls['NoteDate'].dirty || angForm.controls['NoteDate'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['NoteDate'].errors.required">
+          Note Date is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click) = "addNote(1, NoteTitle.value, NoteDate.value)" type="submit" class="btn btn-primary"
+        [disabled]="angForm.pristine || angForm.invalid" >
+          Create Note
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
